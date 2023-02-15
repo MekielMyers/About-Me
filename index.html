@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        .list-item{
+            color: red;
+        }
+        img{
+            width: 200px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<h1>About Me</h1>
+<ul>
+<li>Nickname: <span id="nickname"></span>
+<li>Favorites: <span id="favorites"></span>
+<li>Hometown: <span id="hometown"></span>
+</ul>
+<script>
+
+    var x = document.body
+    x.style.fontFamily = "Arial, sans-serif";
+    document.getElementById("nickname").innerHTML = "Mekiel"
+    document.getElementById("favorites").innerHTML = "Video Games"
+    document.getElementById("hometown").innerHTML = "Tolleson"
+    document.getElementsByTagName('li')[0].className = "list-item"
+    document.getElementsByTagName('li')[1].className = "list-item"
+    document.getElementsByTagName('li')[2].className = "list-item"
+    var y = document.createElement('img')
+    y.src = "/Images/mSelfie.jpg"
+    x.appendChild(y)
+
+</script>
+</body>
